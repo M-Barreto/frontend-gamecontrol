@@ -1,0 +1,112 @@
+body {
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #1C1A32;
+}
+
+.header {
+    background-color: #1C1A32;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 10px;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, #00E1FD, #FC007A) 1;
+}
+
+.header img {
+    margin-left: 20px;
+}
+
+.header .menu {
+    display: flex;
+    gap: 15px;
+    padding: 30px;
+}
+
+.header .menu li {
+    padding: 0 20px;
+}
+
+.header .menu li a {
+    color: #00E1FD;
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header .menu li a:hover {
+    border-bottom: solid 2px #00E1FD;
+}
+
+section .card {
+    display: flex;
+    margin-top: 60px;
+    gap: 100px;
+}
+
+.card img {
+    max-width: 300px;
+    margin-left: 150px;
+    border-radius: 10px;
+    box-shadow: 2px 2px black;
+}
+
+
+.card .sinopse h1 {
+    width: 280px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 35px;
+    color: white;
+    padding:  0px  15px 0px 15px;
+    line-height: 1.6;
+    background-image: linear-gradient(to right, #00E1FD , #FC007A);
+    border-radius: 0px 25px 0px 25px;
+    
+
+}
+
+.card .sinopse p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 2px black;
+    line-height: 1.6;
+    padding-left: 15px;
+    margin-top: 15px;
+    margin-right: 50px;
+    text-align: justify;
+}
+
+.informacoes p{
+    margin-left: 150px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 2px black;
+    line-height: 1.6;
+    margin-top: 30px;
+    margin-right: 150px;
+}
+
+#informacoes{
+    display: flex;
+}
+
+.botoes{
+    display:flex;
+    gap: 25px;
+    margin-left: 300px;
+}
+
+input{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    height: 50px;
+    color: white;
+    background-image: linear-gradient(to right, #00E1FD , #FC007A);
+    padding: 0px 15px 0px 15px;
+    border-radius: 15px;
+
+}

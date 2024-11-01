@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+body {
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #1C1A32;
+}
+
+.header {
+    background-color: #1C1A32;
+    display: flex;
+    justify-content:center;
+    padding: 10px;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, #00E1FD, #FC007A) 1;
+}
+
+.conteiner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.card{
+    background-color: #ffffff80;
+    padding: 60px;
+    border-radius: 5%;
+    box-shadow: 3px 3px 1px 0px #ffffff;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #050442;
+    font-size: 20pt;
+}
+
+.label-float input{
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #00E1FD;
+    background-color: transparent;
+    outline: none;
+    min-width: 200px;
+    font-size: 20px;
+    transition: all .3s ease-out;
+    border-radius: 0;
+}
+
+.label-float{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float input:focus{
+    border-bottom: 2px solid #00E1FD;
+}
+
+.label-float label{
+    color: #050442;
+    pointer-events: none;
+    position: absolute;
+    font-size: 20px;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+
+.label-float input:focus+ label{
+    font-size:20px;
+    margin-top:0;
+    color: #050442;
+}
+
+.label-float input:valid+label{
+    font-size: 13px;
+    margin-top: 0;
+    color: #050442;
+}
+
+button{
+    background-color: transparent;
+    border-color: #00E1FD;
+    color: #050442;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20pt;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all .2s ease-out;
+}
+
+button:hover{
+    background-color: #00E1FD;
+    color: white;
+}
+
+.justify-center{
+    display: grid;
+    justify-content: center;  
+}
+
+#erro{
+    display: flex;
+    justify-content: center;
+    color: rgba(121, 0, 0, 0.993);
+    font-size: 15px;
+    padding: 5px;
+    font-weight: bold; 
+}
+
+#msg{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+    background-color: #ffffff80;
+    padding: 15px;
+    border-radius: 5%;
+    box-shadow: 3px 3px 1px 0px #ffffff;
+    font-size: 50px;
+}
+
+p{
+    padding-top: 15px;
+    font-size: 15px;
+    color: #050442;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,126 @@
+body {
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #1C1A32;
+}
+
+.header {
+    background-color: #1C1A32;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 10px;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, #00E1FD, #FC007A) 1;
+}
+
+.header img {
+    margin-left: 20px;
+}
+
+.header .menu {
+    display: flex;
+    gap: 15px;
+    padding: 30px;
+}
+
+.header .menu li {
+    padding: 0 20px;
+}
+
+.header .menu li a {
+    color: #00E1FD;
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header .menu li a:hover {
+    border-bottom: solid 2px #00E1FD;
+}
+
+.tela-principal .games-list {
+    margin-top: 0%
+
+}
+
+.tela-principal .games-list h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    padding-left: 30px;
+    margin-top: 5px;
+    font-size: 50px;
+    color: #00E1FD;
+    text-shadow: 4px 4px black;
+    line-height: 1.6;
+
+}
+
+.tela-principal .games-list p {
+    font-family: 'Roboto', sans-serif;
+    width: 450px;
+
+    margin-left: 30px;
+    padding: 20px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.712);
+    border-radius: 6px;
+    text-shadow: 1px 2px black;
+    line-height: 1.6;
+}
+
+main ul{
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    transition: transform .3s;
+}
+
+main ul li:hover {
+    transform: scale(1.1);
+    marker: none;
+}
+
+main ul li img {
+    border-radius: 8%;
+    width: 210px;
+   
+   }
+
+main h1 {
+    animation: fromTop .7s  backwards ;
+}
+
+main p{
+    animation: fromBottom .7s backwards;
+}
+
+@keyframes fromTop {
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+       
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+        
+    }
+}
+
+@keyframes fromBottom{
+
+    from{
+           opacity: 0;
+           transform: translateY(10px);
+          
+       }
+   
+       to{
+           opacity: 1;
+           transform: translateY(0);
+           
+       }
+   }
