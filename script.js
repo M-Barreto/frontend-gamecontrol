@@ -11,7 +11,7 @@ async function cadastrar() {
     "birth_date": data_nascimento
   }
   console.log(data)
-  fetch('https://49dd-187-181-113-218.ngrok-free.app/user', {
+  fetch('https://477f-2804-29b8-507d-4f39-6071-e453-d4e9-3b57.ngrok-free.app/user', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data)
@@ -28,7 +28,7 @@ async function entrar(){
       "email": email,
       "password": senha
   }
-  fetch('https://49dd-187-181-113-218.ngrok-free.app/login', {
+  fetch('https://477f-2804-29b8-507d-4f39-6071-e453-d4e9-3b57.ngrok-free.app/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)
