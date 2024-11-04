@@ -22,3 +22,11 @@ async function cadastrar() {
  }
 
  
+ document.addEventListener("DOMContentLoaded", function() {
+  const botao = document.getElementById("btn");
+  
+  botao.addEventListener("click", function() {
+      alert("você clicou no botão");
+
+  });
+});
