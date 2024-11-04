@@ -16,7 +16,7 @@ async function cadastrar() {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data)
   }).then(response => response.json()).then(data => {
-    window.location.href = "login.html";
+    window.location.href = "index.html";
   }).catch(error => console.error('Error sending data:', error));
 
  }

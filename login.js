@@ -10,6 +10,6 @@ async function entrar(){
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
       }).then(response => response.json()).then(data => {
-        window.location.href = "index.html";
+        window.location.href = "paginaInicial.html";
       }).catch(error => console.error('Error sending data:', error));
 }
