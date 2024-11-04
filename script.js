@@ -11,7 +11,7 @@ async function cadastrar() {
     "birth_date": data_nascimento
   }
   console.log(data)
-  fetch('http://localhost:4000/user', {
+  fetch('https://49dd-187-181-113-218.ngrok-free.app/user', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data)

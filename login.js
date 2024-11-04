@@ -5,7 +5,7 @@ async function entrar(){
         "email": email,
         "password": senha
     }
-    fetch('http://localhost:4000/login', {
+    fetch('https://49dd-187-181-113-218.ngrok-free.app/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
