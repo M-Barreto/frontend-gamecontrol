@@ -20,7 +20,7 @@
                 <h1>Crie uma conta</h1>
 
                 <div class="label-float">
-                    <input type="email" id="email"  placeholder="" required>
+                    <input type="email" id="email" placeholder="" required>
                     <label for="email">Email</label>
                 </div>
 
@@ -39,12 +39,46 @@
                     <label for="data_nascimento">Data de Nascimento</label>
                 </div>
 
-                
+
                 <div class="justify-center">
-                    <button type="button" id="btn" >cadastrar</button>
+                    <button type="button" id="btn" onclick="cadastrar()">cadastrar</button>
+
                 </div>
             </div>
-            <script src="/script.js"></script>
+            <script>
+                //função para guardar usuario e senha quando cadastrar
+                async function cadastrar() {
+                    let email = document.getElementById("email").value;
+                    let nome = document.getElementById("nome").value;
+                    let senha = document.getElementById("senha").value;
+                    let data_nascimento = document.getElementById("data_nascimento").value;
+                    const data = {
+                        "email": email,
+                        "name": nome,
+                        "password": senha,
+                        "birth_date": data_nascimento
+                    }
+                    console.log(data)
+                    fetch('https://49dd-187-181-113-218.ngrok-free.app/user', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(data)
+                    }).then(response => response.json()).then(data => {
+                        window.location.href = "index.html";
+                    }).catch(error => console.error('Error sending data:', error));
+
+                }
+
+
+                document.addEventListener("DOMContentLoaded", function () {
+                    const botao = document.getElementById("btn");
+
+                    botao.addEventListener("click", function () {
+                        alert("você clicou no botão");
+
+                    });
+                });
+            </script>
 </body>
 
 </html>
