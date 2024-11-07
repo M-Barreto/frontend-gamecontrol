@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/cadastro.css">
     <title>Criar Conta</title>
 </head>
@@ -13,12 +14,26 @@
         <div class="logo">
             <img src="./assets/logo.png">
         </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="./paginaInicial.html">INÍCIO</a></li>
+                <li><a href="./suaLista.html">SUA LISTA</a></li>
+                <li><a href="./perfil.html">PERFIL</a></li>
+                <li><a href="./index.html">SAIR</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <div class="conteiner">
-            <div class="card">
+            <div class="card" id="dataUser">
                 <h1>Seus Dados</h1>
-            </div>
+                <p>Nome:</p>
+                <p>Email:</p>
+                <p>Data de Nascimento</p>
+            
+            <button type="button" onclick="editUser()">Editar</button>
+            <button type="button" onclick="deleteUser()">Deletar Conta</button>
+        </div>
             <script src="script.js"></script>
 </body>
 

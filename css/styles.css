@@ -72,6 +72,7 @@ body {
 main ul{
     display: flex;
     gap: 60px;
+    margin-top: 20px;
     flex-wrap: wrap;
     padding-left: 30px;
     transition: transform .3s;

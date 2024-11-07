@@ -54,7 +54,7 @@ section .card {
 
 
 .card .sinopse h1 {
-    width: 280px;
+    width:fit-content;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 35px;
     color: white;

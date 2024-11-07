@@ -17,12 +17,38 @@ body{
 .header {
     background-color: #1C1A32;
     display: flex;
-    justify-content:center;
+    justify-content: space-between;
+    align-content: center;
     padding: 10px;
     border-bottom: 3px solid;
     border-image: linear-gradient(to right, #00E1FD, #FC007A) 1;
 }
 
+.header img {
+    margin-left: 20px;
+}
+
+.header .menu {
+    display: flex;
+    gap: 15px;
+    padding: 30px;
+}
+
+.header .menu li {
+    padding: 0 20px;
+    
+}
+
+.header .menu li a {
+    color: #00E1FD;
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+.header .menu li a:hover {
+    border-bottom: solid 2px #00E1FD;
+}
 
 .conteiner {
     display: flex;
@@ -33,7 +59,7 @@ body{
 
 .card{
     background-color: #ffffff80;
-    padding: 60px;
+    padding: 30px;
     border-radius: 5%;
     box-shadow: 3px 3px 1px 0px #ffffff;
 }
